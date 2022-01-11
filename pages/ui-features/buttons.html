@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Corona Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="../../index.html"><img src="../../assets/images/logo.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="../../assets/images/faces/face15.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                <h5 class="mb-0 font-weight-normal">MALIX</h5>
+                <span>Gold Member</span>
+              </div>
+            </div>
+            <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+            <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+              <a href="#" class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-dark rounded-circle">
+                    <i class="mdi mdi-settings text-primary"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-dark rounded-circle">
+                    <i class="mdi mdi-onepassword  text-info"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-dark rounded-circle">
+                    <i class="mdi mdi-calendar-today text-success"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <p class="preview-subject ellipsis mb-1 text-small">logout</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">SERENE</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../index.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Referrals</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/error-500.html">level 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/error-500.html">level 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/error-500.html">level 3</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../pages/tables/basic-table.html">
+              <span class="menu-icon">
+              <i class="mdi mdi-chart-bar"></i>
+              </span>
+            <span class="menu-title">Investments</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../pages/charts/chartjs.html">
+              <span class="menu-icon">
+                  <i class="mdi mdi-table-large"></i>
+
+              </span>
+
+                <span class="menu-title">Withdrawals</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../pages/icons/mdi.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-contacts"></i>
+              </span>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+
+
+
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+
+
+
+        <!-- partial -->
+    
+    <hr>
+
+     <div class="table">
+       <div class="col-12 mx-auto falcon-data-table table-responsive">
+         <table class="table table-sm table-hover data-table no-wrap mb-0 fs--1 w-100" data-options='{"searching":false,"responsive":false,"pageLength":15,"info":true,"lengthChange":false,"sWrapper":"falcon-data-table-wrapper","dom":"<&#39;row mx-1&#39;<&#39;col-sm-12 col-md-6&#39;l><&#39;col-sm-12 col-md-6&#39;f>><&#39;table-responsive&#39;tr><&#39;row no-gutters px-1 py-3 align-items-center justify-content-center&#39;<&#39;col-auto&#39; p>>","language":{"paginate":{"next":"<span class=\"fas fa-chevron-right\"></span>","previous":"<span class=\"fas fa-chevron-left\"></span>"}}}'>
+           <thead>
+             <tr>
+               <th scope="col">#</th>
+               <th scope="col">Registration Date</th>
+               <th scope="col">Username</th>
+               <th scope="col">Phone</th>
+               <th scope="col">Status</th>
+             </tr>
+           </thead>
+           <tbody>
+                           <tr>
+                 <th scope="row">4421</th>
+                 <td>2021-07-24 09:34:25</td>
+                 <td>JoJo</td>
+                 <td>254706198596</td>
+                 <td>
+                                       <span class="badge badge-pill badge-danger">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">4670</th>
+                 <td>2021-07-25 11:32:40</td>
+                 <td>dékãsh</td>
+                 <td>254798609542</td>
+                 <td>
+                                       <span class="badge badge-pill badge-danger">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">4783</th>
+                 <td>2021-07-25 20:58:18</td>
+                 <td>Elizah254</td>
+                 <td>254797146281</td>
+                 <td>
+                                       <span class="badge badge-pill badge-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">4914</th>
+                 <td>2021-07-26 12:54:17</td>
+                 <td>Papichulo_kim</td>
+                 <td>254727150095</td>
+                 <td>
+                                       <span class="badge badge-pill badge-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">4917</th>
+                 <td>2021-07-26 12:57:44</td>
+                 <td>GeorgeKE</td>
+                 <td>254717885711</td>
+                 <td>
+                                       <span class="badge badge-pill badge-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">5093</th>
+                 <td>2021-07-26 21:57:53</td>
+                 <td>EuniceM</td>
+                 <td>254791804132</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">5095</th>
+                 <td>2021-07-26 22:06:13</td>
+                 <td>Kevinkip</td>
+                 <td>254759403755</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">5116</th>
+                 <td>2021-07-27 00:16:56</td>
+                 <td>Neddy123</td>
+                 <td>254712355093</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">5177</th>
+                 <td>2021-07-27 10:23:10</td>
+                 <td>Illicit</td>
+                 <td>254796223875</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">5200</th>
+                 <td>2021-07-27 11:16:37</td>
+                 <td>Fazeliking</td>
+                 <td>254746737245</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">5293</th>
+                 <td>2021-07-27 15:54:17</td>
+                 <td>Rvintra</td>
+                 <td>254723027362</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">5561</th>
+                 <td>2021-07-28 11:41:02</td>
+                 <td>Lizfelow</td>
+                 <td>254714936838</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">5833</th>
+                 <td>2021-07-29 08:39:17</td>
+                 <td>Okechpj</td>
+                 <td>254792848799</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">6151</th>
+                 <td>2021-07-30 06:02:48</td>
+                 <td>Rastonelijah</td>
+                 <td>254741117647</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">6160</th>
+                 <td>2021-07-30 07:20:16</td>
+                 <td>Vincennes</td>
+                 <td>254759756901</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">6183</th>
+                 <td>2021-07-30 08:43:29</td>
+                 <td>reload_e.m.p.i.r.e</td>
+                 <td>254758892231</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">6259</th>
+                 <td>2021-07-30 12:08:02</td>
+                 <td>Boychild254</td>
+                 <td>254701684279</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">6295</th>
+                 <td>2021-07-30 13:39:32</td>
+                 <td>MurithiOliver</td>
+                 <td>254769971407</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">6488</th>
+                 <td>2021-07-30 22:53:13</td>
+                 <td>BarbraAdams</td>
+                 <td>254718077164</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">6816</th>
+                 <td>2021-07-31 21:35:52</td>
+                 <td>justo</td>
+                 <td>254114378426</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">7336</th>
+                 <td>2021-08-02 10:42:27</td>
+                 <td>Emmanuel2021</td>
+                 <td>254112311263</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">8059</th>
+                 <td>2021-08-03 15:41:51</td>
+                 <td>Nachu98</td>
+                 <td>255763560414</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">8060</th>
+                 <td>2021-08-03 15:42:54</td>
+                 <td>Nachu988</td>
+                 <td>255624629259</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">8326</th>
+                 <td>2021-08-04 01:01:27</td>
+                 <td>Naha2063</td>
+                 <td>254796474219</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">8509</th>
+                 <td>2021-08-04 13:14:27</td>
+                 <td>Sheila</td>
+                 <td>254748369424</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">9059</th>
+                 <td>2021-08-05 14:34:52</td>
+                 <td>Akiiki</td>
+                 <td>254745560339</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">9353</th>
+                 <td>2021-08-06 05:09:40</td>
+                 <td>liskami</td>
+                 <td>254727831274</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">10029</th>
+                 <td>2021-08-07 13:02:09</td>
+                 <td>Val</td>
+                 <td>254797808790</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">10923</th>
+                 <td>2021-08-09 10:07:48</td>
+                 <td>Prittycandy</td>
+                 <td>254710576045</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-warning">Inactive</span>
+                                   </td>
+               </tr>
+                           <tr>
+                 <th scope="row">11151</th>
+                 <td>2021-08-09 20:39:51</td>
+                 <td>WereKE</td>
+                 <td>254745346808</td>
+                 <td>
+                                       <span class="badge badge-pill badge-soft-success">Active</span>
+                                   </td>
+               </tr>
+                       </tbody>
+         </table>
+       </div>
+     </div>
+   </div>
+ </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <!-- endinject -->
+  </body>
+</html>
